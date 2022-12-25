@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="icon" href="./assets/alura-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header>
+        <section class="header__container">
+            <div class="header__left">
+                <a href="index.html"><img src="./assets/logo.png" alt="Alura Geek Logo" class="logo__img"></a>
+                <div class="header__search-box__container">
+                    <input type="text" class="header__search-box__input" placeholder="¿Qué deseas buscar?">
+                    <a href="#" class="header__search-box__search-icon"><img src="./assets/search_icon.png" alt="Search icon"></a>
+                </div>
+            </div>
+            <a href="#" class="header__login-button">Admin Space</a>
+        </section>
+    </header>
+    <main>
+        <section class="banner__container">
+            <ul>
+                <li class="banner__img-container"><img src="./assets/main-banner-1.jpg" class="banner__img" alt="Banner img"></li>
+                <li class="banner__img-container"><img src="./assets/main-banner-2.png" class="banner__img" alt="Vecteezy.com"></li>
+                <li class="banner__img-container"><img src="./assets/main-banner-3.jpg" class="banner__img" alt="Vecteezy.com"></li>
+                <li class="banner__img-container"><img src="./assets/main-banner-4.jpg" class="banner__img" alt="Vecteezy.com"></li>
+            </ul>
+            <img src="./assets/slider_arrow-left.png" alt="arrow left" class="slider_arrow" id="slider_arrow-left">
+            <img src="./assets/slider_arrow-right.png" alt="arrow right" class="slider_arrow" id="slider_arrow-right">
+            <div class="selectors__container">
+                <input type="radio" name="radiobtn" class="selectors" id="selector1" checked>
+                <input type="radio" name="radiobtn" class="selectors" id="selector2">
+                <input type="radio" name="radiobtn" class="selectors" id="selector3">
+                <input type="radio" name="radiobtn" class="selectors" id="selector4">
+            </div>
+        </section>
+        <div class="main-index__container">
+            <section class="main-index__category" id="main-index__consoles">
+                <header class="main-index__header">
+                    <h2 class="main-index__title">Consolas</h2>
+                    <div>
+                        <a href="#" class="main-index__see-list"><p class="main-index__see-list__title">Ver todo</p><img src="./assets/right-arrow.png" alt="right arrow" class="main-index__see-list__arrow"></a>
+                    </div>
+                </header>
+                <div class="main-index__products--container">
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/consola/consola-1.png" alt="Console Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Control XYZ</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/consola/consola-2.png" alt="Console Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Control y consola XYZ</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/consola/consola-3.png" alt="Console Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Consola XYZ</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/consola/consola-4.png" alt="Console Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Control XYZ</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/consola/consola-5.png" alt="Console Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Consola XYZ</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/consola/consola-6.png" alt="Console Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Game Boy Color</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="main-index__category" id="main-index__starwars">
+                <header class="main-index__header">
+                    <h2 class="main-index__title">Star Wars</h2>
+                    <div>
+                        <a href="#" class="main-index__see-list"><p class="main-index__see-list__title">Ver todo</p><img src="./assets/right-arrow.png" alt="right arrow" class="main-index__see-list__arrow"></a>
+                    </div>
+                </header>
+                <div class="main-index__products--container">
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/starwars/starwars-1.png" alt="Star Wars Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Producto XYZ</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/starwars/starwars-2.png" alt="Star Wars Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Producto XYZ</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/starwars/starwars-3.png" alt="Star Wars Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Producto XYZ</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/starwars/starwars-4.png" alt="Star Wars Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Producto XYZ</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/starwars/starwars-5.png" alt="Star Wars Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Producto XYZ</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/starwars/starwars-6.png" alt="Star Wars Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Producto XYZ</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-index__category" id="main-index__miscellaneous--category">
+                <header class="main-index__header">
+                    <h2 class="main-index__title">Diversos</h2>
+                    <div>
+                        <a href="#" class="main-index__see-list"><p class="main-index__see-list__title">Ver todo</p><img src="./assets/right-arrow.png" alt="right arrow" class="main-index__see-list__arrow"></a>
+                    </div>
+                </header>
+                <div class="main-index__products--container">
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/diversos/diversos-1.png" alt="Miscellaneous Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Camisa Atari</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/diversos/diversos-2.png" alt="Miscellaneous Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Camisa SNES</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/diversos/diversos-3.png" alt="Miscellaneous Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Control y consola XYZ</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/diversos/diversos-4.png" alt="Miscellaneous Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Control y consola XYZ</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/diversos/diversos-5.png" alt="Miscellaneous Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Control y consola XYZ</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="main-index__products">
+                        <img class="main-index__products--image" src="./assets/diversos/diversos-6.png" alt="Miscellaneous Thumbnail">
+                        <div class="main-index__products__description">
+                            <p class="main-index__products--title">Producto XYZ</p>
+                            <p class="main-index__products--price">60.00</p>
+                            <a href="#" class="main-index__products--link">Ver producto</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="bottom__image-box__container">
+                <div class="bottom__image-box box1">
+                    <p class="bottom__image-box__description" id="desc1">Aproveche las nuevas ofertas en productos seleccionados</p>
+                </div>
+                <div class="bottom__image-box box2">
+                    <p class="bottom__image-box__description" id="desc2">Aproveche las nuevas ofertas en productos seleccionados</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="footer__container">
+            <img src="./assets/logo.png" alt="AluraGeek Logo" class="logo__img">
+            <div class="footer__links">
+                <a href="#"><p>Quienes somos</p></a>
+                <a href="#"><p>Política de privacidad</p></a>
+                <a href="#"><p>Programa de fidelidad</p></a>
+                <a href="#"><p>Nuestras Tiendas</p></a>
+                <a href="#"><p>Quiero ser franquiciado</p></a>
+                <a href="#"><p>Anúncie aquí</p></a>
+            </div>
+            <form action="" class="footer__form">
+                <p>Hable con nosotros</p>
+                <label for="name"><input type="text" class="form__input" id="form-name" placeholder="Nombre"></label>
+                <label for="message"><input type="text" class="form__input" id="form-message" placeholder="Escribe tu mensaje"></label>
+                <button type="submit" class="form-submit">Enviar mensaje</button>
+            </form>
+        </section>
+        <div class="footer__author">
+            <p>Made by Nicolas Valdez</p>
+            <p>2022</p>
+        </div>
+    </footer>
+    <script src="./js/banners.js"></script>
+</body>
+</html>

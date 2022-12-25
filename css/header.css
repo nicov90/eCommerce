@@ -1,0 +1,42 @@
+.header__container, .header__left, .header__search-box__container{
+    display: flex;
+    align-items: center;
+}
+.header__container{
+    padding: 20px 0;
+    justify-content: space-between;
+}
+.header__left{
+    gap: 40px;
+}
+.header__search-box__container{
+    gap: 10px;
+    position: relative;
+}
+.header__search-box__input{
+    background-color: rgb(243, 243, 243);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: rgb(148, 148, 148);
+    font-family: inherit;
+    width: 400px;
+}
+.header__search-box__search-icon{
+    position: absolute;
+    top: 25%;
+    right: 15px;
+}
+.header__login-button{
+    padding: 14px 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(212, 212, 212);
+    color: rgb(78, 78, 78);
+    font-size: 14px;
+    transition: 0.1s all;
+}
+.header__login-button:hover{
+    background-color: rgb(89, 140, 185);
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,32 @@
+:root{
+    --background: white;
+}
+*{
+    box-sizing: border-box;
+}
+*::selection{
+    color: black;
+    background-color: rgb(252, 252, 236);
+}
+html{
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background-color: var(--background);
+}
+body > * > section, .main-index__container{
+    margin: 0 auto;
+    width: 1220px;
+}
+a{
+    text-decoration: none;
+}
+body > header{
+    background-color: white;
+}
+main{
+    background-color: rgb(243, 243, 243);
+}
+footer{
+    background-color: #EAF2FD;
+}

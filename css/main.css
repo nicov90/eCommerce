@@ -1,0 +1,268 @@
+.banner__container{
+    width: 1500px;
+    /*width: 90%;
+    max-width: 1600px;*/
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+}
+.banner__container ul{
+    display: flex;
+}
+.banner__img{
+    width: 1500px;
+}
+.banner__img-container{
+    width: 100%;
+    transition: 0.75s all ease;
+}
+.banner__img-container:first-child{
+    transition: 0.75s all ease;
+    animation: translate forwards infinite 20s;
+}
+@keyframes translate {
+    0%{
+        margin-left: 0px;
+    }
+    20%{
+        margin-left: 0px;
+    }
+    22.5%{
+        margin-left: -1500px;
+    }
+    42.5%{
+        margin-left: -1500px;
+    }
+    45%{
+        margin-left: -3000px;
+    }
+    65%{
+        margin-left: -3000px;
+    }
+    67.5%{
+        margin-left: -4500px;
+    }  
+    87.5%{
+        margin-left: -4500px;
+    }
+    90%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+.slider_arrow{
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#slider_arrow-left{
+    left: 10px;
+}
+#slider_arrow-right{
+    right: 10px;
+}
+.selectors__container{
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.selectors{
+    position: relative;
+    transform: scale(0.8);
+}
+.selectors::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.selectors:checked:before{
+    transition: .1s all;
+    background-color: rgb(51, 51, 51);
+}
+.main-index__container{
+    padding: 40px 0;
+}
+.main-index__category{
+    margin-bottom: 30px;
+}
+.main-index__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.main-index__title{
+    font-size: 1.6em;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+}
+.main-index__see-list{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.main-index__see-list__title{
+    color: dodgerblue;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+.main-index__see-list__title:hover, .main-index__products--link:hover{
+    color: rgb(0, 100, 200);
+}
+.main-index__see-list__arrow{
+    width: 12px;
+    height: 12px;
+}
+.main-index__products--container{
+    display: flex;
+    justify-content: space-between;
+}
+.main-index__products{
+    width: 190px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px rgb(187, 187, 187);
+    transition: 0.25s all;
+    position: relative;
+}
+.main-index__products:hover{
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(187, 187, 187);
+}
+.main-index__products::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 187.83px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    left: 0;
+    top: 0;
+}
+.main-index__products:hover::before{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.main-index__products--image{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.main-index__products__description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 12px;
+    padding-bottom: 10px;
+}
+.main-index__products--title{
+    color: rgb(68, 68, 68);
+    font-weight: 500;
+    font-size: 13.5px;
+}
+.main-index__products--price{
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+}
+.main-index__products--price::before{
+    content: "$";
+}
+.main-index__products--title, .main-index__products--price{
+    cursor: default;
+}
+.main-index__products--link{
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 15px;
+}
+.bottom__image-box__container{
+    margin: 60px 0 40px;
+    display: flex;
+    gap: 20px;
+}
+.bottom__image-box{
+    width: 600px;
+    height: 300px;
+    background-position: center;
+    position: relative;
+    border-radius: 20px;
+}
+.box1{
+    background-image: url(../assets/banner-alt-1.jpg);
+}
+.box1::before, .box2::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 20px;
+}
+.box1::before{
+    background:linear-gradient(20turn,rgba(118, 118, 253, 0.5) 5%,rgba(238, 130, 238, 0) 35%);
+}
+.box1::after, .box2::after{
+    content: "";
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    height: 93.5%;
+    width: 100%;
+}
+.box1:hover::before{
+    background-color: rgba(0, 0, 0, 0.438);
+    content: "";
+}
+.box1:hover::after{
+    content: "MEGA SALE";
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+.bottom__image-box__description{
+    visibility: hidden;
+    color: white;
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 25px;
+    line-height: 22px;
+}
+.box2{
+    background-image: url(../assets/banner-alt-2.jpg);
+}
+.box2::before{
+    background:linear-gradient(20turn,rgba(200, 200, 255, 0.5) 5%,rgba(238, 130, 238, 0) 35%);
+}
+.box2:hover::before{
+    background:linear-gradient(20turn,rgba(200, 200, 255, 0.3) 5%,rgba(238, 130, 238, 0) 35%);
+    background-color: rgba(0, 0, 0, 0.438);
+    content: "";
+}
+.box2:hover::after{
+    content: "Black Friday";
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
