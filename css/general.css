@@ -6,7 +6,7 @@
 }
 *::selection{
     color: black;
-    background-color: rgb(200, 233, 255);
+    background-color: rgb(149, 186, 255);
 }
 html{
     font-family: 'Raleway', sans-serif;
@@ -17,10 +17,6 @@ body{
 body > * > section, .main-index__container{
     margin: 0 auto;
     width: 1220px;
-}
-.login__container{
-    margin: 11vh auto;
-    width: 600px;
 }
 a{
     text-decoration: none;
@@ -33,4 +29,7 @@ main{
 }
 footer{
     background-color: #EAF2FD;
+}
+.footer__author{
+    background-color: white;
 }

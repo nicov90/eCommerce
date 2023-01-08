@@ -1,16 +1,31 @@
+body{
+    height: 100vh;
+    background-image: url(../assets/background_from_pngtree-1199250.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.all{
+    padding-top: 12vh;
+}
 .login__container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 70px;
+    gap: 65px;
     background-color: rgba(30, 143, 255, 0.082);
-    padding: 80px 0;
+    padding: 75px 0;
     border-radius: 30px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 550px;
 }
 .login__logo{
-    width: 350px;
+    width: 275px;
+    mix-blend-mode: screen;
 }
 .login__inputs{
+    width: 220px;
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
@@ -19,66 +34,132 @@
 .login__label{
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 1rem;
     gap: 10px;
+    letter-spacing: 0.3px;
     font-weight: 500;
-    color: rgb(0, 40, 80);
+    color: rgba(227, 234, 255, 0.8);
 }
 .login__label:nth-child(2){
     margin-bottom: 30px;
 }
 .login__input{
-    width: 250px;
+    font: inherit;
     border: 1px solid black;
-    border-radius: 6px;
-    height: 40px;
-    font-size: 18px;
+    border-radius: 8px;
+    height: 38px;
+    font-size: 14px;
     padding: 0 10px;
-    color: rgb(75, 75, 75);
-    border: 3px solid rgb(127, 155, 172);
+    box-shadow: 0 0 0px 50px rgb(175, 200, 250) inset;
+    color: black;
+    -webkit-text-fill-color: black;
+    border: 2px solid rgb(99, 138, 189);
     outline: none;
 }
 .login__input:focus{
-    border: 3px solid rgb(68, 143, 218);
+    border: 3px solid rgb(53, 129, 235);
+    color: rgb(0, 67, 155);
+    -webkit-text-fill-color: rgb(0, 67, 155);
 }
 .login_error{
-    width: 200px;
     display: none;
-    color: red;
+    margin: auto;
+    color: rgba(255, 0, 0, 0.85);
     font-weight: 500;
-    line-height: 22px;
+    line-height: 18px;
+    font-size: 15px;
+    width: 170px;
+    text-align: center;
 }
 .login__buttons{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.login__buttons > a, .login__submit{
+.login__buttons > a, .login__buttons > a > p, .login__submit{
     border-radius: 5px;
     transition: 0.25s all;
 }
-.login__buttons > a{
-    width: 80px;
+.login__buttons > a > p{
+    width: 75px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(99, 98, 98);
+    background-color: rgba(99, 98, 98, 0.5);
     color: white;
-    line-height: normal;
+    font-size: 14px;
 }
-.login__buttons > a:hover{
-    background-color: rgb(121, 121, 121);
+.login__buttons > a >p:hover{
+    background-color: rgb(121, 121, 121, 0.5);
 }
 .login__submit{
-    font-size: 1.1rem;
-    width: 150px;
+    line-height: normal;
+    font-size: 15px;
+    width: 130px;
     height: 50px;
-    background-color: dodgerblue;
+    background-color: rgba(30, 143, 255, 0.3);
     color: white;
     border: transparent;
 }
 .login__submit:hover{
     cursor: pointer;
-    background-color: rgb(3, 107, 211);
+    background-color: rgb(3, 107, 211, 0.6);
+}
+.backgroundref{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+@media screen and (max-width: 1024px){
+    body{
+        background-image: url(../assets/cut-background_from_pngtree-1199250.png);
+    }
+}
+@media screen and (max-width: 425px){
+    .all{
+        padding-top: 10vh;
+    }
+    .login__container{
+        background-color: rgba(16, 51, 87, 0.95);
+    }
+    .login__logo{
+        width: 250px;
+    }
+    .backgroundref{
+        z-index: -1;
+    }
+}
+@media screen and (max-width: 320px){
+    .all{
+        padding-top: 7vh;
+    }
+    .login__container{
+        border-radius: 20px;
+        width: 100%;
+    }
+    .login__inputs{
+        width: 240px;
+        margin-bottom: 0;
+    }
+    .login__input{
+        height: 44px;
+        font-size: 16px;
+        box-shadow: 0 0 0px 50px rgb(193, 214, 255) inset;
+    }
+    .login__buttons{
+        margin-top: 20px;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    .login__buttons > a > p{
+        width: 135px;
+    }
+    .login__submit{
+        width: 180px;
+        font-size: 1rem;
+    }
 }
