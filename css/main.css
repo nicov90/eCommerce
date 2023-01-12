@@ -4,7 +4,7 @@
     max-width: 1600px;*/
     overflow: hidden;
     position: relative;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .banner__container ul{
     display: flex;
@@ -115,12 +115,12 @@
     align-items: center;
 }
 .main-index__see-list__title{
-    color: dodgerblue;
+    color: dodgerblue !important;
     font-weight: 700;
     font-size: 0.9em;
 }
 .main-index__see-list__title:hover, .main-index__products--link:hover{
-    color: rgb(0, 100, 200);
+    color: rgb(0, 100, 200) !important;
 }
 .main-index__see-list__arrow{
     width: 12px;
@@ -174,7 +174,7 @@
 .main-index__products--title{
     color: rgb(68, 68, 68);
     font-weight: 500;
-    font-size: 13.5px;
+    font-size: 15px;
 }
 .main-index__products--price{
     font-weight: bold;
@@ -248,6 +248,7 @@
     text-align: center;
     margin-top: 25px;
     line-height: 22px;
+    font-size: 15px;
 }
 .box2{
     background-image: url(../assets/banner-alt-2.jpg);

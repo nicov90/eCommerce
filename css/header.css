@@ -9,6 +9,12 @@
 .header__left{
     gap: 40px;
 }
+.logo__img{
+    background: no-repeat center;
+    background-image: url(../assets/logo.png);
+    background-size: contain;
+    cursor: pointer;
+}
 .header__search-box__container{
     gap: 10px;
     position: relative;
@@ -19,14 +25,42 @@
     border: 1px solid transparent;
     border-radius: 20px;
     padding: 10px 20px;
-    color: rgb(148, 148, 148);
+    color: rgb(141, 141, 141);
     font-family: inherit;
     width: 400px;
+}
+.header__search-box__input::placeholder{
+    color: rgb(181, 181, 181);
 }
 .header__search-box__search-icon{
     position: absolute;
     top: 25%;
     right: 15px;
+}
+.header__right{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.theme{
+    font-family: Verdana, sans-serif;
+    background-color: white;
+    cursor: pointer;
+    padding: 5px 12px 0 5px;
+    font-size: 15px;
+    margin-right: 5px;
+    border: 2px solid rgb(87,87,116);
+    border-radius: 4px;
+}
+.theme:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+#dark-theme{
+    color: white;
+    background-color: rgb(86, 86, 86);
+}
+#dark-theme:hover{
+    filter: brightness(1.1);
 }
 .header__login-button{
     padding: 14px 20px;
@@ -37,6 +71,6 @@
     transition: 0.1s all;
 }
 .header__login-button:hover{
-    background-color: rgb(89, 140, 185);
-    color: rgb(255, 255, 255);
+    background-color: rgb(63, 103, 139) !important;
+    color: rgb(255, 255, 255) !important;
 }

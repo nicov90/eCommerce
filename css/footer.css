@@ -19,7 +19,7 @@
     color: #464646;
 }
 .footer__links p:hover{
-    color:#2A7AE4;
+    color:#578bcf !important;
 }
 .footer__form{
     width: 560px;
@@ -50,13 +50,14 @@
 .form-submit{
     width: 140px;
     height: 45px;
-    background-color: #2A7AE4;
+    background-color: rgb(42, 122, 228);
     color: white;
     border: none;
     font-family: inherit;
 }
 .form-submit:hover{
     cursor: pointer;
+    background-color: rgba(42, 123, 228, 0.85);
 }
 .form-submit:active{
     background-color: #1254aa;

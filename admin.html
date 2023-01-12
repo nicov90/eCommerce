@@ -18,15 +18,21 @@
     <header>
         <section class="header__container">
             <div class="header__left">
-                <a href="index.html"><img src="./assets/logo.png" alt="Alura Geek Logo" class="logo__img"></a>
+                <div alt="Alura Geek Logo" class="logo__img" onclick="window.location='index.html';"></div>
                 <div class="header__search-box__container">
                     <input type="text" class="header__search-box__input" placeholder="¿Qué deseas buscar?">
                     <a href="#" class="header__search-box__search-icon"><img src="./assets/search_icon.png" alt="Search icon"></a>
                 </div>
             </div>
-            <a href="index.html" class="header__login-button">Volver</a>
+            <div class="header__right">
+                <div class="theme__container">
+                    <button class="theme" id="default" title="Default">A</button>
+                    <button class="theme" id="dark-theme" title="Dark Mode">A</button>
+                </div>
+                <a href="index.html" class="header__login-button">Volver</a>
+            </div>
         </section>
     </header>
-    
+    <script src="./js/dark-mode.js"></script>
 </body>
 </html>

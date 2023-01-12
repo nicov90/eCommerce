@@ -19,21 +19,27 @@
     <header>
         <section class="header__container">
             <div class="header__left">
-                <a href="index.html"><img src="./assets/logo.png" alt="Alura Geek Logo" class="logo__img"></a>
+                <div alt="Alura Geek Logo" class="logo__img" onclick="window.location='index.html';"></div>
                 <div class="header__search-box__container">
                     <input type="text" class="header__search-box__input" placeholder="¿Qué deseas buscar?">
                     <a href="#" class="header__search-box__search-icon"><img src="./assets/search_icon.png" alt="Search icon"></a>
                 </div>
             </div>
-            <a href="login.html" class="header__login-button">Admin Space</a>
+            <div class="header__right">
+                <div class="theme__container">
+                    <button class="theme" id="default" title="Default">A</button>
+                    <button class="theme" id="dark-theme" title="Dark Mode">A</button>
+                </div>
+                <a href="login.html" class="header__login-button">Admin Space</a>
+            </div>
         </section>
     </header>
     <main>
         <section class="banner__container">
             <ul>
                 <li class="banner__img-container"><img src="./assets/main-banner-1.jpg" class="banner__img" alt="Banner img"></li>
-                <li class="banner__img-container"><img src="./assets/main-banner-2.png" class="banner__img" alt="Vecteezy.com"></li>
-                <li class="banner__img-container"><img src="./assets/main-banner-3.jpg" class="banner__img" alt="Vecteezy.com"></li>
+                <li class="banner__img-container"><img src="./assets/main-banner-2.png" class="banner__img" alt="canva.com"></li>
+                <li class="banner__img-container"><img src="./assets/main-banner-3.jpg" class="banner__img" alt="freepik.com - BiZkettE1"></li>
                 <li class="banner__img-container"><img src="./assets/main-banner-4.jpg" class="banner__img" alt="Vecteezy.com"></li>
             </ul>
             <img src="./assets/slider_arrow-left.png" alt="arrow left" class="slider_arrow" id="slider_arrow-left">
@@ -224,17 +230,17 @@
             </section>
             <div class="bottom__image-box__container">
                 <div class="bottom__image-box box1">
-                    <p class="bottom__image-box__description" id="desc1">Aproveche las nuevas ofertas en productos seleccionados</p>
+                    <h5 class="bottom__image-box__description" id="desc1">Aproveche las nuevas ofertas en productos seleccionados</h5>
                 </div>
                 <div class="bottom__image-box box2">
-                    <p class="bottom__image-box__description" id="desc2">Aproveche las nuevas ofertas en productos seleccionados</p>
+                    <h5 class="bottom__image-box__description" id="desc2">Aproveche las nuevas ofertas en productos seleccionados</h5>
                 </div>
             </div>
         </div>
     </main>
     <footer>
         <section class="footer__container">
-            <img src="./assets/logo.png" alt="AluraGeek Logo" class="logo__img">
+            <div alt="Alura Geek Logo" class="logo__img" onclick="window.location='index.html';"></div>
             <div class="footer__links">
                 <a href="#"><p>Quienes somos</p></a>
                 <a href="#"><p>Política de privacidad</p></a>
@@ -244,7 +250,7 @@
                 <a href="#"><p>Anúncie aquí</p></a>
             </div>
             <form action="" class="footer__form">
-                <p>Hable con nosotros</p>
+                <p>Contactese con nosotros</p>
                 <label for="name"><input type="text" class="form__input" id="form-name" placeholder="Nombre"></label>
                 <label for="message"><input type="text" class="form__input" id="form-message" placeholder="Escribe tu mensaje"></label>
                 <button type="submit" class="form-submit">Enviar mensaje</button>
