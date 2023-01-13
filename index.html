@@ -19,10 +19,13 @@
     <header>
         <section class="header__container">
             <div class="header__left">
-                <div alt="Alura Geek Logo" class="logo__img" onclick="window.location='index.html';"></div>
+                <div alt="Alura Geek Logo" class="logo__img" id="logo-top" onclick="window.location='index.html';"></div>
                 <div class="header__search-box__container">
                     <input type="text" class="header__search-box__input" placeholder="¿Qué deseas buscar?">
                     <a href="#" class="header__search-box__search-icon"><img src="./assets/search_icon.png" alt="Search icon"></a>
+                </div>
+                <div class="header__menu-mobile__container">
+                    <div alt="menu" class="header__menu-icon"></div>
                 </div>
             </div>
             <div class="header__right">
@@ -37,19 +40,11 @@
     <main>
         <section class="banner__container">
             <ul>
-                <li class="banner__img-container"><img src="./assets/main-banner-1.jpg" class="banner__img" alt="Banner img"></li>
-                <li class="banner__img-container"><img src="./assets/main-banner-2.png" class="banner__img" alt="canva.com"></li>
-                <li class="banner__img-container"><img src="./assets/main-banner-3.jpg" class="banner__img" alt="freepik.com - BiZkettE1"></li>
-                <li class="banner__img-container"><img src="./assets/main-banner-4.jpg" class="banner__img" alt="Vecteezy.com"></li>
+                <li class="banner__img-container"><div class="banner__img" id="banner__img-1" alt="Banner img"></div></li>
+                <li class="banner__img-container"><div class="banner__img" id="banner__img-2" alt="canva.com"></div></li>
+                <li class="banner__img-container"><div class="banner__img" id="banner__img-3" alt="freepik.com - BiZkettE1"></div></li>
+                <li class="banner__img-container"><div class="banner__img" id="banner__img-4" alt="Vecteezy.com"></div></li>
             </ul>
-            <img src="./assets/slider_arrow-left.png" alt="arrow left" class="slider_arrow" id="slider_arrow-left">
-            <img src="./assets/slider_arrow-right.png" alt="arrow right" class="slider_arrow" id="slider_arrow-right">
-            <div class="selectors__container">
-                <input type="radio" name="radiobtn" class="selectors" id="selector1" checked>
-                <input type="radio" name="radiobtn" class="selectors" id="selector2">
-                <input type="radio" name="radiobtn" class="selectors" id="selector3">
-                <input type="radio" name="radiobtn" class="selectors" id="selector4">
-            </div>
         </section>
         <div class="main-index__container">
             <section class="main-index__category" id="main-index__consoles">
@@ -240,17 +235,19 @@
     </main>
     <footer>
         <section class="footer__container">
-            <div alt="Alura Geek Logo" class="logo__img" onclick="window.location='index.html';"></div>
-            <div class="footer__links">
-                <a href="#"><p>Quienes somos</p></a>
-                <a href="#"><p>Política de privacidad</p></a>
-                <a href="#"><p>Programa de fidelidad</p></a>
-                <a href="#"><p>Nuestras Tiendas</p></a>
-                <a href="#"><p>Quiero ser franquiciado</p></a>
-                <a href="#"><p>Anúncie aquí</p></a>
+            <div class="footer-links__container">
+                <div alt="Alura Geek Logo" class="logo__img" id="logo-bottom" onclick="window.location='index.html';"></div>
+                <div class="footer__links">
+                    <a href="#"><p>Quienes somos</p></a>
+                    <a href="#"><p>Política de privacidad</p></a>
+                    <a href="#"><p>Programa de fidelidad</p></a>
+                    <a href="#"><p>Nuestras Tiendas</p></a>
+                    <a href="#"><p>Quiero ser franquiciado</p></a>
+                    <a href="#"><p>Anúncie aquí</p></a>
+                </div>
             </div>
             <form action="" class="footer__form">
-                <p>Contactese con nosotros</p>
+                <p>Contáctese con nosotros</p>
                 <label for="name"><input type="text" class="form__input" id="form-name" placeholder="Nombre"></label>
                 <label for="message"><input type="text" class="form__input" id="form-message" placeholder="Escribe tu mensaje"></label>
                 <button type="submit" class="form-submit">Enviar mensaje</button>
@@ -261,7 +258,9 @@
             <p>2022</p>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/banners.js"></script>
     <script src="./js/dark-mode.js"></script>
+    <script src="./js/others.js"></script>
 </body>
 </html>

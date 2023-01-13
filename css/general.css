@@ -16,7 +16,7 @@ body{
 }
 body > * > section, .main-index__container{
     margin: 0 auto;
-    width: 1220px;
+    width: 1290px;
 }
 a{
     text-decoration: none;
@@ -30,6 +30,32 @@ main{
 footer{
     background-color: #EAF2FD;
 }
+.footer__container{
+    padding: 60px 35px;
+}
 .footer__author{
     background-color: white;
+}
+.header__container{
+    padding: 20px 35px;
+}
+.main-index__container{
+    padding: 40px 35px;
+}
+
+@media screen and (max-width: 1290px){
+    body > * > section, .main-index__container{
+        width: 1060px;
+    }
+}
+@media screen and (max-width: 1060px){
+    body > * > section, .main-index__container{
+        width: 95%;
+        max-width: 956px;
+    }
+}
+@media screen and (max-width: 720px){
+    .main-index__container{
+        padding: 40px 5px;
+    }
 }
