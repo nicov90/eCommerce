@@ -51,18 +51,18 @@ function setTheme(){
             e.style.boxShadow = "0 0 3px white, inset 50px -175px 150px rgb(35, 35, 50)";
         })
 
-        header.style.background = "rgb(45,45,65)";
+        header.style.background = "rgb(35,35,55)";
         searchInput.style.backgroundColor = "black";
         searchInput.style.color = "white";
         if(window.innerWidth <= 720){
-            headerMenu.style.backgroundColor = "rgb(45,45,65)";
-            headerMenu.style.boxShadow = "0 7px 20px rgb(85, 85, 98)";
+            headerMenu.style.backgroundColor = "rgb(35,35,55)";
+            headerMenu.style.boxShadow = "0 10px 14px rgb(80, 80, 98)";
         }
         menuIcon.style.backgroundImage = "url(./assets/menu_icon-darkmode.svg)";
         login.style.color = "white";
         login.style.backgroundColor = "rgb(51 64 106)";
         login.style.boxShadow = "0 0 2px rgb(44 60 141)";
-        main.style.background = "rgb(40,40,55)";
+        main.style.background = "rgb(30,30,50)";
         footer.style.background = "rgb(45,45,65)";
         bottomLogo.style.backgroundImage = "url(./assets/white-AluraGeek_big.png)";
         headerLogo.style.mixBlendMode = "screen";
@@ -106,8 +106,8 @@ function setTheme(){
         searchInput.style.backgroundColor = "rgb(243, 243, 243)";
         searchInput.style.color = "rgb(141, 141, 141)";
         if(window.innerWidth <= 720){
-            headerMenu.style.backgroundColor = "rgb(248, 248, 248)";
-            headerMenu.style.boxShadow = "0 0 20px rgb(218,218,218)";
+            headerMenu.style.backgroundColor = "white";
+            headerMenu.style.boxShadow = "0 10px 16px rgb(218,218,218)";
         }
         menuIcon.style.backgroundImage = "url(./assets/menu_icon.svg)";
         login.style.color = "rgb(78, 78, 78)";

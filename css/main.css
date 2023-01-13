@@ -204,11 +204,13 @@
     background-color: rgba(0, 0, 0, 0.438);
     content: "";
 }
-.box1:hover::after{
-    content: "MEGA SALE";
+.box1:hover::after, .box2:hover::after{
     font-size: 28px;
     color: white;
     text-align: center;
+}
+.box1:hover::after{
+    content: "MEGA SALE";
 }
 .bottom__image-box__description{
     visibility: hidden;
@@ -236,9 +238,6 @@
 }
 .box2:hover::after{
     content: "Black Friday";
-    font-size: 28px;
-    color: white;
-    text-align: center;
 }
 @media screen and (max-width: 1500px){
     .banner__container{
@@ -397,6 +396,13 @@
         height: 200px;
         background-position-y: 5px;
     }
+    .box1::after, .box2::after{
+        align-items: initial;
+        top: 30%;
+    }
+    .bottom__image-box__description{
+        top: 35%;
+    }
 }
 @media screen and (max-width: 425px){
     .banner__img{
@@ -411,6 +417,9 @@
     .bottom__image-box{
         width: 94vw;
         background-position-y: 18px;
+    }
+    .bottom__image-box__description{
+        width: 250px;
     }
 }
 @media screen and (max-width: 320px){
@@ -432,5 +441,8 @@
     .bottom__image-box{
         width: 92vw;
         height: 180px;
+    }
+    .bottom__image-box__description{
+        width: 250px;
     }
 }
