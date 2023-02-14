@@ -1,9 +1,9 @@
-const menuIcon = document.querySelector(".header__menu-icon");
+const menuMobileIcon = document.querySelector(".header__menu-icon");
 const headerMenu = document.querySelector(".header__right");
 const menuOpened = false;
 localStorage.setItem("MenuOpened", JSON.stringify(false));
 
-menuIcon.addEventListener("click", e =>{
+menuMobileIcon.addEventListener("click", e =>{
     if(!JSON.parse(localStorage.getItem("MenuOpened"))){
         localStorage.setItem("MenuOpened", JSON.stringify(true));
         headerMenu.style.visibility = "visible";

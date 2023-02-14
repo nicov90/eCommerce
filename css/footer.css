@@ -13,9 +13,9 @@
 }
 .footer__links{
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     font-weight: 500;
-    gap: 25px;
     font-size: 15px;
 }
 .footer__links a{
@@ -94,6 +94,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         text-align: center;
+        gap: 25px;
     }
     .footer__form{
         width: 370px;
