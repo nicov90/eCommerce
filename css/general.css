@@ -1,15 +1,14 @@
 :root{
     --background: white;
 }
-*{
+html, *, footer{
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    line-height: 16px;
 }
 *::selection{
     color: black;
     background-color: rgb(149, 186, 255);
-}
-html{
-    font-family: 'Raleway', sans-serif;
 }
 body{
     background-color: var(--background);
@@ -20,6 +19,9 @@ body > * > section, .main-index__container{
 }
 a{
     text-decoration: none;
+}
+p{
+    margin: 0px;
 }
 body > header{
     background-color: white;

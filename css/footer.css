@@ -1,4 +1,5 @@
 .footer__container{
+    /*font-family: 'Raleway';*/
     display: flex;
     justify-content: space-between;
     max-width: 1060px;
@@ -56,6 +57,7 @@
     background-color: rgb(42, 122, 228);
     color: white;
     border: none;
+    font-size: 14px;
     font-family: inherit;
 }
 .form-submit:hover{
